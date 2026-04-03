@@ -30,10 +30,3 @@ public class DoomClient {
         return instance;
     }
 }
-        return keyBindManager;
-    }
-
-    public static Logger getLogger() {
-        return LOGGER;
-    }
-}
