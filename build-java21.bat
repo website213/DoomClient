@@ -5,7 +5,7 @@ setlocal enabledelayedexpansion
 echo Checking for Java 21...
 
 REM List of common Java 21 install paths
-set "JAVA21_PATHS=C:\Program Files\Java\jdk-21 C:\Program Files\Java\jdk-21.0.2"
+set "JAVA21_PATHS=C:\java-21\jdk21 C:\Program Files\Java\jdk-21 C:\Program Files\Java\jdk-21.0.2"
 
 for %%P in (!JAVA21_PATHS!) do (
     if exist "%%P\bin\java.exe" (
