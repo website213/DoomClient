@@ -1,11 +1,7 @@
 {
   "name": "DoomClient Dev",
-  "image": "mcr.microsoft.com/devcontainers/java:21-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
   "features": {
-    "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/gradle:1": {}
-  },
-  "forwardPorts": [8080],
-  "postCreateCommand": "java -version && gradle --version",
-  "remoteUser": "root"
+    "ghcr.io/devcontainers/features/git:1": {}
+  }
 }
