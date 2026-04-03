@@ -31,6 +31,7 @@ public class ModuleManager {
         register(new TargetStrafeModule());
         register(new AutoBowModule());
         register(new AutoPotModule());
+        register(new ReachModule());
 
         // Utility Modules
         register(new AutoSprintModule());
