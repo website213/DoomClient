@@ -1,0 +1,65 @@
+# Gradle
+.gradle/
+build/
+*.jar
+*.class
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+*.jar
+*.war
+*.zip
+*.tar.gz
+
+# Minecraft
+.minecraft/
+run/
+
+# Log files
+logs/
+*.log
+
+# Java
+target/
+.classpath
+.project
+.settings/
+
+# Gradle Wrapper
+.gradle/
+gradlew
+gradlew.bat
+gradle/
+
+# Build artifacts
+bin/
+dist/
+out/
+
+# Backup files
+*.bak
+*.tmp
+*~
+
+# Environment
+.env
+.env.local
+local.properties
+
+# Node (if any)
+node_modules/
+npm-debug.log
