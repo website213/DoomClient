@@ -1,33 +1,29 @@
 package com.doomclient.gui;
 
-import com.doomclient.DoomClient;
 import com.doomclient.module.Module;
-import com.doomclient.settings.*;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
-
-import java.util.List;
 
 /**
- * TouchGUI - Main GUI for Doom Client.
- * Opens on semicolon key press and displays all modules with their settings.
+ * TouchGUI - Simplified GUI for Doom Client.
  */
 public class TouchGUI extends Screen {
-    private static final int SIDEBAR_WIDTH = 150;
-    private static final int MODULE_WIDTH = 300;
-    private static final int ENTRY_HEIGHT = 25;
-    private static final int PADDING = 10;
-
-    private List<Module> modules;
-    private Module selectedModule;
-    private int scrollOffset;
-    private boolean visible;
-
+    
     public TouchGUI() {
-        super(Text.literal("Doom Client GUI"));
-        this.modules = DoomClient.getInstance().getModuleManager().getModules();
+        super(Text.literal("Doom Client"));
+    }
+
+    @Override
+    public void render(net.minecraft.client.gui.DrawContext context, int mouseX, int mouseY, float partialTickTime) {
+        this.fillGradient(context, 0, 0, this.width, this.height, 0xFF000000, 0xFF1111AA);
+        context.drawCenteredTextWithShadow(this.textRenderer, "Doom Client GUI", this.width / 2, 10, 0xFFFFFF);
+    }
+    
+    @Override
+    public boolean shouldCloseOnEsc() {
+        return true;
+    }
+}
         this.selectedModule = modules.isEmpty() ? null : modules.get(0);
         this.scrollOffset = 0;
         this.visible = true;
